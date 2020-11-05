@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/fuentes.css">
+    <title>Fequsa Ings | Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-principal">
+            <div class="contenedor-logo">
+            <a href="index.html"><img src="img/logos/logo-fequsa.svg" alt="FEQUSA"></a>
+            </div>
+            <div class="contenedor-navegador">
+            <nav>
+                <input type="radio" name="slider" id="boton-abrir-menu">
+                <input type="radio" name="slider" id="boton-cerrar-menu">
+                <ul class="lista-menu">
+                <label for="boton-cerrar-menu" class="boton boton-cerrar-menu"><img src="img/iconos/menu-navegador/cerrar-menu-responsive.svg"></label>
+                    <li><div class="enlace-navegador"><a href="index.html">Inicio</a></div></li>
+                    <li><div class="enlace-navegador"><a href="nosotros.html">Nosotros</a></div></li>
+                    <li><div class="enlace-navegador" id="enlace-nav-productos"><a href="productos.html">Productos</a>
+                        <input type="checkbox" id="menu-productos-inicio">
+                        <label for="menu-productos-inicio" class="item-de-celular"><img src="img/iconos/menu-navegador/flecha-menu.svg"></label>
+                        
+                        <div class="sublista-menu">
+                            <div class="contenedor-principal">
+                            <ul class="ul-sublista">
+                            <li><a href="productos-acoplamientos.html">Acoplamientos</a></li>
+                            <li><a href="productos-embragues.html">Embragues</a></li>
+                            <li><a href="productos-frenos.html">Frenos industriales</a></li>
+                            <li><a href="productos-reductores.html">Reductores de velocidad</a></li>                            
+                            <li><a href="productos-variadores.html">Variadores de velocidad</a></li>
+                            <li><a href="productos-unidades-conicas-de-fijacion.html">Unidades cónicas de fijación</a></li>
+                            <li><a href="productos-chumceras.html">Chumaceras</a></li>
+                            <li><a href="productos-cadenas.html">Cadenas</a></li>
+                            <li><a href="productos-juntas.html">Juntas de expansión</a></li>
+                            <li><a href="productos-acumuladores.html">Acumuladores hidráulicos</a></li>
+                            <li><a href="productos-poleas.html">Poleas</a></li>
+                            <li><a href="productos-cardanes.html">Cardanes</a></li>
+                            <li><a href="productos-limitadores-de-torque.html">Limitadores de torque</a></li>
+                            <li><a href="productos-motores.html">Motores eléctricos</a></li>
+                            <li><a href="productos-válvulas.html">Válvulas</a></li>
+                            <li><a href="productos-bombas.html">Bombas</a></li>
+                            </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    </li>
+                    <li><div class="enlace-navegador"><a href="servicios.html">Servicios</a></div></li>
+                    <li><div class="enlace-navegador"><a href="noticias.html">Noticias</a></div></li>
+                    <li><div class="enlace-navegador"><a href="contacto.html">Contacto</a></div></li>
+                </ul>
+                <label for="boton-abrir-menu" class="boton boton-abrir-menu"><img src="img/iconos/menu-navegador/menu-responsive.svg"></label>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner-inicio">
+        <div class="banner-margen-superior">
+            <div class="contenedor-principal">
+
+            </div>
+        </div>
+    </section>
+    <main>
+        <input type="radio" name="slider" id="menu-btn">
+    </main>
+<script>
+    const barra = document.querySelector("header");
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? barra.classList.add("estatico") : barra.classList.remove("estatico");
+    }
+</script>
+</body>
+</html>

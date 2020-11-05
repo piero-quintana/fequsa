@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatDisplay/RedHatDisplay-Regular.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+  }
+  
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Medium.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatDisplay/RedHatDisplay-Medium.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+  }
+  
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Bold.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatDisplay/RedHatDisplay-Bold.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Black.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatDisplay/RedHatDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatDisplay/RedHatDisplay-Black.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+  }
+  
+@font-face {
+    font-family: "RedHatText";
+    src: url("../fuente/RedHatText/RedHatText-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatText/RedHatText-Regular.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatText/RedHatText-Regular.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+  }
+  
+@font-face {
+    font-family: "RedHatText";
+    src: url("../fuente/RedHatText/RedHatText-Medium.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatText/RedHatText-Medium.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatText/RedHatText-Medium.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "RedHatText";
+    src: url("../fuente/RedHatText/RedHatText-Bold.eot");
+    /* IE9 Compat Modes */
+    src: url("../fuente/RedHatText/RedHatText-Bold.eot?#iefix") format("embedded-opentype"), url("../fuente/RedHatText/RedHatText-Bold.woff") format("woff");
+    /* Modern Browsers */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+ /* Display: 900 = black; 700 = bold; 400 = medium; 300 = regular */
+ /* Text: 700 = bold; 400 = medium; 300 = regular */

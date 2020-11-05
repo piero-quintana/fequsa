@@ -1,0 +1,292 @@
+*{margin: 0px;padding: 0px;text-decoration:none;}
+.contenedor-principal{
+    padding: 0 50px;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 2;
+    transition: all 0.3s ease;
+    font-family: "RedHatDisplay", sans-serif;
+  }
+header.estatico{
+    height: 70px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #118136;
+  }
+header.estatico .contenedor-logo a{
+    padding: 10px 0px;
+    transition: all 0.3s ease-in-out;
+}
+header.estatico .lista-menu li .enlace-navegador{
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+.contenedor-logo{
+    height: 100%;
+    width: 150px;
+    float: left;
+}
+.contenedor-logo a{
+    display: block;
+    box-sizing: border-box;
+    padding: 20px 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.contenedor-logo a img{
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+.contenedor-navegador{
+    float: right;
+    height: 100%;
+}
+.lista-menu>li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin-left: 11px;
+    height: 80px;
+}
+.lista-menu li .enlace-navegador{
+    display: inline-block;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: auto;
+    border-radius: 20px;
+}
+#enlace-nav-productos>a{
+    display: inline-block;
+    width: unset;
+    padding-right: 8px;
+}
+.lista-menu>li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: background-color linear;
+}
+.lista-menu li div:not(#enlace-nav-productos) a:hover{
+    background-color: #213621;
+    transition: linear;
+}
+#enlace-nav-productos:hover{
+    background-color: #213621;
+    transition: linear;
+}
+.banner-inicio{
+    background: linear-gradient(to top left, #099939, #0d722f, #0a5824);
+    height: 100vh;
+    width: 100%;
+}
+.banner-margen-superior{
+    display: block;
+    box-sizing: border-box;
+    padding-top: 90px;
+    width: 100%;
+    height: 100%;
+}
+#menu-productos-inicio:checked ~ .sublista-menu{
+    max-height: 100%;
+    transition: all 0.3s ease-in-out;
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+header.estatico #menu-productos-inicio:checked ~ .sublista-menu{
+    top: 70px;
+}
+.sublista-menu{
+    position: absolute;
+    left: 0;
+    width: 100%;    
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+}
+.sublista-menu .ul-sublista{
+    background:  #213621;
+    padding: 15px 0px 22px 2px;
+    float: right;
+    box-sizing: border-box;
+    width: 610px;
+    margin: auto;
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px solid #ebeceb;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.contenedor-principal .ul-sublista>li{
+    list-style: none;    
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+.sublista-menu li a{
+    width: unset;
+    display: inline;
+    padding: 0;
+    font-family: "RedHatText";
+    font-weight: 300;
+    font-size: 12px;
+    border-radius: 0px;
+    line-height: 10px !important;
+}
+.sublista-menu li a:hover{
+    font-weight: 400;
+}
+.lista-menu .item-de-celular{
+    height: 10px;
+    width: auto;
+    display: inline-block;
+    padding-right: 15px;
+}
+.lista-menu .item-de-celular img{
+    height: auto;
+    width: 12px;
+    cursor: pointer;
+    display: block;
+    padding-top: 2px;
+}
+input{
+    display: none;
+}
+.boton{
+    cursor: pointer;
+    display: none;
+}
+.boton.boton-abrir-menu{
+    line-height: 105px;
+}
+.boton-abrir-menu img{
+    height: 25px;
+    width: auto;
+}
+header.estatico .boton.boton-abrir-menu{
+    line-height: 85px;
+}
+.boton.boton-cerrar-menu{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.boton-cerrar-menu img{
+    height: 15px;
+    width: auto;
+}
+
+@media (max-width: 960px){
+    .contenedor-principal{
+        padding: 0 40px;
+    }
+}
+@media (max-width: 880px){
+    header{
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        z-index: 2;
+        transition: all 0.3s ease;
+        font-family: "RedHatDisplay", sans-serif;
+      }
+    header.estatico{
+        height: 70px;
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-in-out;
+        background-color: #118136;
+    } 
+    .contenedor-logo{
+        height: 100%;
+        width: 150px;
+        float: left;
+    }   
+    /*.contenedor-logo{
+        display: block;
+        margin: auto;
+        float: unset;
+    }*/
+    .contenedor-logo a{
+        display: block;
+        box-sizing: border-box;
+        padding: 20px 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    .contenedor-logo a img{
+        height: 50px;
+        width: auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+
+
+
+    .contenedor-principal{
+        padding: 0 30px;
+    }
+    .boton{
+        display: block;
+    }
+    .boton.boton-abrir-menu{
+        position: absolute;
+        top: 0;
+        right: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+    #boton-abrir-menu:checked ~ .lista-menu{
+        right: 0%;
+      }
+    #boton-abrir-menu:checked ~ .boton.boton-abrir-menu{
+        display: none;
+    }
+    #boton-cerrar-menu:checked ~ .boton.boton-abrir-menu{
+        display: block;
+    }
+    
+  nav .lista-menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    top: 0;
+    right: -110%;
+    background: #213621;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+}
+
+
+main{
+      height: 1900px;
+  }
