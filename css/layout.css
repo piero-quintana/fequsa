@@ -1,4 +1,4 @@
-*{margin: 0px;padding: 0px;text-decoration:none;}
+*{margin: 0px;padding: 0px;text-decoration:none;transition: all 0.3s ease-in-out;}
 .contenedor-principal{
     padding: 0 50px;
     width: 100%;
@@ -86,11 +86,16 @@ header.estatico .lista-menu li .enlace-navegador{
 }
 .lista-menu li div:not(#enlace-nav-productos) a:hover{
     background-color: #213621;
-    transition: linear;
+    transition: background-color linear;
+}
+#enlace-nav-productos{
+    transition: background-color linear;    
+    transition: margin 0.3s ease-in-out;
 }
 #enlace-nav-productos:hover{
     background-color: #213621;
-    transition: linear;
+    transition: background-color linear;
+    transition: margin 0.3s ease-in-out;
 }
 .banner-inicio{
     background: linear-gradient(to top left, #099939, #0d722f, #0a5824);
@@ -104,6 +109,11 @@ header.estatico .lista-menu li .enlace-navegador{
     width: 100%;
     height: 100%;
 }
+#menu-productos-inicio:checked ~ .item-de-celular>img{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+    transform-origin: 50% 55%;
+}   
 #menu-productos-inicio:checked ~ .sublista-menu{
     max-height: 100%;
     transition: all 0.3s ease-in-out;
@@ -144,7 +154,7 @@ header.estatico #menu-productos-inicio:checked ~ .sublista-menu{
     margin-bottom: 20px;
     display: block;
 }
-.sublista-menu li a{
+.sublista-menu .ul-sublista li a{
     width: unset;
     display: inline;
     padding: 0;
@@ -152,7 +162,7 @@ header.estatico #menu-productos-inicio:checked ~ .sublista-menu{
     font-weight: 300;
     font-size: 12px;
     border-radius: 0px;
-    line-height: 10px !important;
+    line-height: 10px;
 }
 .sublista-menu li a:hover{
     font-weight: 400;
@@ -229,13 +239,13 @@ header.estatico .boton.boton-cerrar-menu{
     position: fixed;
     height: 100vh;
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     box-sizing: border-box;
     top: 0;
     right: -110%;
     background: #213621;
     display: block;
-    padding: 50px 80px 50px 40px;
+    padding: 50px 70px 50px 40px;
     overflow-y: auto;
     box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
     transition: all 0.3s ease;
@@ -248,21 +258,31 @@ header.estatico .boton.boton-cerrar-menu{
         margin: 20px 0px;
         height: unset;
     }
-    .lista-menu li .enlace-navegador :nth-child(1){
+    nav ul.lista-menu li:nth-child(2)>.enlace-navegador{
         border-top: none;
+        padding-top: 0px;
     }
     .lista-menu li .enlace-navegador{
         display: block;
         height: unset;
-        padding-top: 10px;
+        padding-top: 20px;
         margin: 0px;
         border-radius: 0px;
-        border-top: 1px solid #ebeceb;
+        border-top: 1px solid #a5a5a5;
     }
     #enlace-nav-productos>a{
         display: inline-block;
         width: unset;
-        padding-right: 0px;
+        padding-right: 20px;
+    }
+    .lista-menu .item-de-celular{
+        display: unset;
+        float: right;
+        padding-right: 10px;
+    }
+    .lista-menu .item-de-celular img{
+        width: 15px;
+        padding-top: 7px;
     }
     .lista-menu>li a{
         display: inline-block;
@@ -273,7 +293,7 @@ header.estatico .boton.boton-cerrar-menu{
         font-weight: 400;
         transition: all 0.3s ease-in-out;
         line-height: unset;
-        padding: 0 15px;
+        padding: 0 10px;
         border-radius: 20px;
         box-sizing: border-box;
         transition: background-color linear;
@@ -284,37 +304,41 @@ header.estatico .boton.boton-cerrar-menu{
         max-height: 100%;
         transition: all 0.3s ease-in-out;
     }
+    #menu-productos-inicio:checked ~ .item-de-celular>img{
+        transform-origin: 50% 65%;
+    }
     .lista-menu .sublista-menu{
         position: static;
         opacity: 1;
         top: 65px;
         visibility: visible;
-        padding-left: 20px;
+        padding-left: 7px;
         width: 100%;
         max-height: 0px;
         overflow: hidden;
         box-shadow: none;
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-in-out;
     }
     .sublista-menu .ul-sublista{
         background:  #213621;
-        padding: 15px 0px 22px 2px;
+        padding: 15px 0px 0px 0px;
         float: unset;
         display: block;
+        column-count: unset;
         box-sizing: border-box;
         width: 100%;
         margin: auto;
-        column-count: unset;
         box-shadow: none;
         border-radius: 0px;
     }
-    .contenedor-principal .ul-sublista>li{
-        list-style: none;    
+    .contenedor-principal .ul-sublista>li{  
         text-align: left;
-        padding-left: 20px;
-        padding-right: 10px;
-        margin-bottom: 20px;
+        padding: 0px 40px 0px 10px;
+        margin-bottom: 17px;
         display: block;
+    }
+    .contenedor-principal .ul-sublista>li:nth-last-child(1){
+        margin-bottom: 0px;
     }
     .sublista-menu li a{
         width: unset;
@@ -322,9 +346,9 @@ header.estatico .boton.boton-cerrar-menu{
         padding: 0;
         font-family: "RedHatText";
         font-weight: 300;
-        font-size: 12px;
+        font-size: 11px;
         border-radius: 0px;
-        line-height: 10px !important;
+        line-height: 5px;
     }
     /*.sublista-menu li a:hover{
         font-weight: 400;
@@ -344,6 +368,11 @@ header.estatico .boton.boton-cerrar-menu{
 @media (max-width: 500px){
     .contenedor-principal{
         padding: 0 20px;
+    }
+}
+@media (max-width: 530px){
+nav .lista-menu{
+    max-width: unset;
     }
 }
 main{
