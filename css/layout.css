@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     text-decoration:none;
-    transition: all 0.3s ease-in-out;
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
@@ -14,18 +13,17 @@
     height: 100%;
     box-sizing: border-box;
 }
-header{
+body header{
     width: 100%;
     height: 90px;
     position: fixed;
     z-index: 2;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     font-family: "RedHatDisplay", sans-serif;
   }
 header.estatico{
     height: 70px;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-in-out;
     background-color: #118136;
   }
 header.estatico .contenedor-logo a{
@@ -64,13 +62,15 @@ header.estatico .lista-menu li .enlace-navegador{
     text-align: center;
     margin-left: 11px;
     height: 80px;
+    transition: all 0.3s ease-in-out;
 }
 .lista-menu li .enlace-navegador{
     display: inline-block;
     height: 40px;
     margin-top: 25px;
     margin-bottom: auto;
-    border-radius: 20px;
+    border-radius: 20px;    
+    transition: all 0.3s ease-in-out;
 }
 #enlace-nav-productos>a{
     display: inline-block;
@@ -105,8 +105,7 @@ header.estatico .lista-menu li .enlace-navegador{
     transition: margin 0.3s ease-in-out;
 }
 #menu-productos-inicio:checked ~ .item-de-celular>img{
-    transform: rotate(180deg);
-    transition: all 0.3s ease-in-out;
+    transform: rotate(-180deg);
     transform-origin: 50% 55%;
 }   
 #menu-productos-inicio:checked ~ .sublista-menu{
@@ -174,6 +173,7 @@ header.estatico #menu-productos-inicio:checked ~ .sublista-menu{
     cursor: pointer;
     display: block;
     padding-top: 2px;
+    transition: all 0.3s ease-in-out;
 }
 input{
     display: none;
@@ -388,24 +388,27 @@ nav .lista-menu{
     width: 100%;
     height: 100%;
 }
+#contenedor-en-banner-inicio{
+    display: flex;
+    align-items: center;
+}
 .titulo-banner-inicio{
     width: 100%;
     max-width: 600px;
     margin: auto;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 900;
     text-align: center;
     color: #fff;
-    line-height: 40px;
+    line-height: 45px;
     letter-spacing: 1px;
 }
 .titulo-banner-inicio .tbi-secundario{
-    font-size: 25px;
+    font-size: 0.55em;
     font-weight: 400;
     margin-top: 30px;
     letter-spacing: 0px;
 }
-
 
 main{
       height: 1900px;
