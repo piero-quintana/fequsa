@@ -26,7 +26,7 @@
                         <label for="menu-productos-inicio" class="item-de-celular"><img src="img/iconos/menu-navegador/flecha-menu.svg"></label>
                         
                         <div class="sublista-menu">
-                            <div class="contenedor-principal">
+                            <div class="contenedor-principal" id="contenedor-en-submenu-navegacion">
                             <ul class="ul-sublista">
                             <li><a href="productos-acoplamientos.html">Acoplamientos</a></li>
                             <li><a href="productos-embragues.html">Embragues</a></li>
@@ -62,15 +62,24 @@
     <section class="banner-inicio">
         <div class="banner-margen-superior">
             <div class="contenedor-principal">
-
+                
             </div>
         </div>
     </section>
     <main>
-        <input type="radio" name="slider" id="menu-btn">
+        
     </main>
 <script>
+    const body = document.querySelector("body");
     const barra = document.querySelector("header");
+    const menuBtn = document.querySelector(".boton-abrir-menu");
+    const cerrarBtn = document.querySelector(".boton-cerrar-menu");
+    menuBtn.onclick = ()=>{
+      body.classList.add("scroll-desactivado");
+    }
+    cerrarBtn.onclick = ()=>{
+      body.classList.remove("scroll-desactivado");
+    }
     window.onscroll = ()=>{
       this.scrollY > 20 ? barra.classList.add("estatico") : barra.classList.remove("estatico");
     }
