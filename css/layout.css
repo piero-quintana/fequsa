@@ -397,11 +397,15 @@ nav .lista-menu{
     max-width: 600px;
     margin: auto;
     font-size: 45px;
-    font-weight: 900;
     text-align: center;
     color: #fff;
-    line-height: 45px;
+}
+.titulo-banner-inicio .tbi-principal{
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0px;
     letter-spacing: 1px;
+    line-height: 45px;
 }
 .titulo-banner-inicio .tbi-secundario{
     font-size: 0.55em;
@@ -409,7 +413,28 @@ nav .lista-menu{
     margin-top: 30px;
     letter-spacing: 0px;
 }
-
+.titulo-banner-inicio .tbi-enlace{
+    margin-top: 30px;    
+    display: block;
+    height: fit-content;
+}
+.titulo-banner-inicio .tbi-enlace a{
+    font-size: 0.35em;
+    background-color: #fff;
+    font-weight: 900;
+    padding: 6px 9px;
+    color:#118136;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+.titulo-banner-inicio .tbi-enlace a:hover{
+    background-color:rgba(0, 0, 0, 0);
+    color:#fff;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
 main{
       height: 1900px;
   }
