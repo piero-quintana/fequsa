@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/estilo-base.css">
     <link rel="stylesheet" href="css/fuentes.css">
     <title>Fequsa Ings | Inicio</title>
 </head>
 <body>
     <header>
-        <div class="contenedor-principal">
-            <div class="contenedor-logo">
-            <a href="index.html"><img src="img/logos/logo-fequsa.svg" alt="FEQUSA"></a>
-            </div>
-            <div class="contenedor-navegador">
+        <div class="cont-principal">
+            <div class="navegador">
+            <a href="index.html"><img class="logo-nav" src="img/logos/logo-fequsa.svg" alt="FEQUSA"></a>
             <nav>
-                <input type="radio" name="slider" id="boton-abrir-menu">
-                <input type="radio" name="slider" id="boton-cerrar-menu">
-                <ul class="lista-menu">
-                <label for="boton-cerrar-menu" class="boton boton-cerrar-menu"><img src="img/iconos/menu-navegador/cerrar-menu-responsive.svg"></label>
-                    <li><div class="enlace-navegador"><a href="index.html">Inicio</a></div></li>
-                    <li><div class="enlace-navegador"><a href="nosotros.html">Nosotros</a></div></li>
-                    <li><div class="enlace-navegador" id="enlace-nav-productos"><a href="productos.html">Productos</a>
-                        <input type="checkbox" id="menu-productos-inicio">
-                        <label for="menu-productos-inicio" class="item-de-celular"><img src="img/iconos/menu-navegador/flecha-menu.svg"></label>
-                        
-                        <div class="sublista-menu">
-                            <div class="contenedor-principal" id="contenedor-en-submenu-navegacion">
-                            <ul class="ul-sublista">
+                <ul class="lista-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a>
+                        <img class="flecha-sublista"src="img/iconos/menu-navegador/flecha-menu.svg" alt="">
+                            <div class="cont-sublista">
+                            <ul class="sublista-nav">
                             <li><a href="productos-acoplamientos.html">Acoplamientos</a></li>
                             <li><a href="productos-embragues.html">Embragues</a></li>
                             <li><a href="productos-frenos.html">Frenos industriales</a></li>
@@ -46,46 +38,98 @@
                             <li><a href="productos-bombas.html">Bombas</a></li>
                             </ul>
                             </div>
-                        </div>
-
-                    </div>
                     </li>
-                    <li><div class="enlace-navegador"><a href="servicios.html">Servicios</a></div></li>
-                    <li><div class="enlace-navegador"><a href="noticias.html">Noticias</a></div></li>
-                    <li><div class="enlace-navegador"><a href="contacto.html">Contacto</a></div></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li id="nav-contacto"><a href="contacto.html">Contacto</a></li>
+                    <div class="overlay-sublista"></div>
                 </ul>
-                <label for="boton-abrir-menu" class="boton boton-abrir-menu"><img src="img/iconos/menu-navegador/menu-responsive.svg"></label>
             </nav>
+            <div class="boton-burguer">
+                <img src="img/iconos/menu-navegador/burguer-icon.svg" alt="">
+            </div>
             </div>
         </div>
     </header>
     <section class="banner-inicio">
-        <div class="banner-margen-superior">
-            <div class="contenedor-principal" id="contenedor-en-banner-inicio">
-                <div class="titulo-banner-inicio">
-                    <div class="tbi-principal">Equipos de transmisión de potencia mecánica</div>
-                    <div class="tbi-secundario">Para la industria en general</div>
-                    <div class="tbi-enlace"><a href="productos.html">Ver productos</a></div>
+        <div class="cont-principal">
+            <div class="cont-banner">
+                <div class="texto-banner">
+                <h2>Equipos de transmisión de potencia mecánica</h2>
+                    <p>Para la industria en general</p>
+                    <div class="bi-enlace"><a href="productos.html">Ver productos</a></div>
                 </div>
+                <img src="img/banner/2.png" alt="">
             </div>
         </div>
     </section>
     <main>
-        
+        <section class="homepage">
+            <div class="cont-principal">
+                <h3>Categorías destacadas</h3>
+                <div class="hmpg-prod-cont">
+                    <div class="hmpg-prod">
+                        <div class="hmpg-prod-dest">
+                        <img src="img/hmpg-prod-dest/acoples.png" alt="">
+                        <h4>Acoplamientos</h4>
+                            <div class="hmpg-descrip">
+                            <ul>
+                                <li>Tipos: Flexibles, de engranajes, de discos flexibles, hidráulicos, de precisión</li>
+                                <li>Marcas: Gummi, Dodge, Desch, Metalflex, Acriflex, Jakob, Dinal</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hmpg-prod">
+                        <div class="hmpg-prod-dest">
+                        <img src="img/hmpg-prod-dest/embragues.png" alt="">
+                        <h4>Embragues</h4>
+                            <div class="hmpg-descrip">
+                            <ul>
+                                <li>Tipos: Neumáticos, magnéticos</li>
+                                <li>Marcas: Gummi, Tekmatic</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hmpg-prod">
+                        <div class="hmpg-prod-dest">
+                        <img src="img/hmpg-prod-dest/reductores.png" alt="">
+                        <h4>Reductores de velocidad</h4>
+                            <div class="hmpg-descrip">
+                            <ul>
+                                <li>Tipos: Corona sin fin, montados al eje, ortogonales, paralelos, planetarios</li>
+                                <li>Marcas: STM, Dodge, ConeDrive</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hmpg-vermas"><a href="productos.html">Ver todas &rarr;</a></div>
+            </div>
+        </section>
+        <section class="homepage">
+
+        </section>
     </main>
-<script>
-    const body = document.querySelector("body");
-    const barra = document.querySelector("header");
-    const menuBtn = document.querySelector(".boton-abrir-menu");
-    const cerrarBtn = document.querySelector(".boton-cerrar-menu");
-    menuBtn.onclick = ()=>{
-      body.classList.add("scroll-desactivado");
+<script>    
+    const botonmenu = document.querySelector(".boton-burguer");
+    const nav = document.querySelector("nav");
+    botonmenu.onclick = ()=>{
+      nav.classList.toggle("nav-activado");
     }
-    cerrarBtn.onclick = ()=>{
-      body.classList.remove("scroll-desactivado");
+    const flecha1 = document.querySelector(".flecha-sublista");
+    const contSublista = document.querySelector(".cont-sublista");
+    const overlaySublista = document.querySelector(".overlay-sublista");
+    flecha1.onclick = ()=>{
+      contSublista.classList.toggle("sublista-activado");
+      flecha1.classList.toggle("volteado");
+      overlaySublista.classList.toggle("mostrar");
     }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? barra.classList.add("estatico") : barra.classList.remove("estatico");
+    overlaySublista.onclick = ()=>{
+      contSublista.classList.toggle("sublista-activado");
+      flecha1.classList.toggle("volteado");
+      overlaySublista.classList.toggle("mostrar");
     }
 </script>
 </body>
