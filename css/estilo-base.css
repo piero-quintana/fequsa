@@ -271,7 +271,7 @@ main{
     }
     nav{
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0px;
         margin-top: 65px;
         right: -100%;
@@ -279,16 +279,16 @@ main{
         width: 100%;
         height: calc(100vh - 65px);
         transition: right 0.3s ease-in-out;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     .boton-burguer{
         display: block;
     }
-    /*.lista-nav{
+    .lista-nav{
         margin:auto;
-        height: unset;
-        overflow: visible;
-    }*/
+        height: 100%;
+        padding-bottom: 80px;
+    }
     nav.nav-activado{
         right: 0%;
     }
