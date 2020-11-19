@@ -32,7 +32,8 @@ header{
     height: 75px;
     width: 100%;
     position: fixed;
-    background: linear-gradient(270deg, #118a39, #075822);
+    /*background: linear-gradient(270deg, #118a39, #075822);*/
+    background-color: black;
 }
 .navegador{
     height: 100%;
@@ -271,23 +272,23 @@ main{
     }
     nav{
         display: block;
-        position: fixed;
+        position: absolute;
         top: 0px;
-        margin-top: 65px;
+        padding-top: 65px;
         right: -100%;
-        background-color: #fff;
         width: 100%;
-        height: calc(100vh - 65px);
+        height: 100vh;
         transition: right 0.3s ease-in-out;
-        overflow-y: auto;
+        z-index: -1000;
     }
     .boton-burguer{
         display: block;
     }
     .lista-nav{
+        background-color: #fff;
         margin:auto;
         height: 100%;
-        padding-bottom: 80px;
+        overflow-y: auto;
     }
     nav.nav-activado{
         right: 0%;
@@ -308,17 +309,19 @@ main{
     }
     .caja-flecha{
         height: 22px;
-        width: 60px;
+        padding-left: 20px;
+        width: 36px;
         border-left: 1px solid #eee;
         display: inline-flex;
-        position: absolute;
-        right: 0;
+        float: right;
+        /*position: absolute;
+        right: 0;*/
     }
     .flecha-sublista{
         height: 11px;
         padding: 0;
         width: auto;
-        margin: 0px 20px;
+        margin: 0px;
         align-self: center;
     }
     .flecha-color{fill:#555;} 
