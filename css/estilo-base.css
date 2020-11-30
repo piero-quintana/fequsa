@@ -195,7 +195,7 @@ nav,.lista-nav{
     margin-bottom: 20px;
 }
 .texto-banner p{
-    font-size: 18px;
+    font-size: 17px;
 }
 .bi-enlace{
     margin-top: 30px;
@@ -289,28 +289,27 @@ nav,.lista-nav{
     margin-bottom: 18px;
 }
 .hmpg-marcas-cont{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
-    width: 100%;
-    row-gap: 45px;
-    column-gap: 20px;
+    width: 90%;
+    margin: auto;
 }
-.hmpg-marcas-cont>img{
+.hmpg-marcas-cont img{
     filter: grayscale(100%) brightness(90%) contrast(150%);
-    max-height: 60px;
-    max-width: 120px;
-    width: auto;
-    height: auto;
-    justify-self: center;
-    align-self: center;
+    height: 40%;
+    width: 100%;
 }
-.hmpg-marcas-cont>img:nth-child(7),
-.hmpg-marcas-cont>img:nth-child(8),
-.hmpg-marcas-cont>img:nth-child(10){
-    max-width: 160px;
+#logo-gummi-hmpg{
+    height: 55%;
 }
-.hmpg-marcas-cont>img:hover{
+#logo-stm-hmpg{
+    height: 60%;
+}
+#logo-tollok-hmpg{
+    height: 30%;
+}
+#logo-jakob-hmpg{
+    height: 30%;
+}
+.hmpg-marcas-cont img:hover{
     filter: grayscale(0%);
 }
 main{
@@ -407,6 +406,31 @@ main{
     .overlay-sublista.mostrar{
         display: none;
     }
+    .hmpg-iconos-cont{
+        column-gap: 8%;
+        margin: 0px 4%;
+    }
+    .hmpg-prod-cont{
+        grid: 1fr 1fr 1fr/100%;
+        column-gap: 0%;
+        row-gap: 35px;
+    }
+    .hmpg-marcas-cont img{
+        filter: none;
+    }
+}
+@media (max-width: 600px){
+    .hmpg-iconos-cont{
+        width: 275px;
+        grid: auto auto/ 110px 110px;
+        gap: 55px;
+        padding: 30px 0px;
+        margin: auto;
+        text-align: center;
+    }
+    .hmpg-marcas-cont .splide .splide__slider{margin: 0px 30px;}
+    button.splide__arrow--prev{left:0px;}
+    button.splide__arrow--next{right:0px;}
 }
  
 .nav-linkedinsvg{fill:#555;} /*#0077b7*/

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo-base.css">
     <link rel="stylesheet" href="css/fuentes.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+
+
     <title>Fequsa Ings | Inicio</title>
 </head>
 <body>
@@ -57,14 +60,55 @@
     </header>
     <section class="banner-inicio">
         <div class="cont-principal">
-            <div class="cont-banner">
-                <div class="texto-banner">
-                <h2>Equipos de transmisión de potencia mecánica</h2>
-                    <p>Para la industria en general</p>
-                    <div class="bi-enlace"><a href="productos.html">Ver productos</a></div>
-                </div>
-                <img src="img/banner/2.png" alt="">
+            <div class="splide" data-splide='{"type":"fade", "rewind": "true","autoplay": "true"}'>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="cont-banner">
+                                    <div class="texto-banner">
+                                    <h2>Equipos de transmisión de potencia mecánica</h2>
+                                        <p>Para la industria en general</p>
+                                        <div class="bi-enlace"><a href="productos.html">Ver productos</a></div>
+                                    </div>
+                                    <img src="img/banner/1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="cont-banner">
+                                    <div class="texto-banner">
+                                        <h2>Acoplamientos y embragues Gummi</h2>
+                                            <p>Acoplamientos flexibles Tipo A<br>Embragues neumáticos</p>
+                                            <div class="bi-enlace"><a href="productos.html">Ver productos</a></div>
+                                        </div>
+                                    <img src="img/banner/gummi_banner.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="cont-banner">
+                                    <div class="texto-banner">
+                                        <h2>Productos Dodge</h2>
+                                            <p>Acoplamientos, chumaceras, poleas y reductores</p>
+                                            <div class="bi-enlace"><a href="productos.html">Ver productos</a></div>
+                                    </div>
+                                    <img src="img/banner/dodge_banner.png" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="cont-banner">
+                                    <div class="texto-banner">
+                                        <h2>Motores, variadores y reductores de velocidad STM</h2>
+                                            <p>Reductores corona sin fin, coaxiales, ortogonales y otros.<br>
+                                                Motores eléctricos con freno.<br>
+                                                Variadores de velocidad mecánicos.</p>
+                                            <div class="bi-enlace"><a href="productos.html">Ver productos</a></div>
+                                    </div>
+                                    <img src="img/banner/stm_banner.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
             </div>
+            
         </div>
     </section>
     <main>
@@ -138,24 +182,50 @@
             <div class="cont-principal">
                 <h3>Marcas distribuidas</h3>
                 <div class="hmpg-marcas-cont">
-                    <img src="img/logos/gummi.svg" alt="">
-                    <img src="img/logos/dodge.svg" alt="">
-                    <img src="img/logos/stm.svg" alt="">
-                    <img src="img/logos/tollok.svg" alt="">
-                    <img src="img/logos/desch.svg" alt="">
-                    <img src="img/logos/trasmil.svg" alt="">
-                    <img src="img/logos/acriflex.svg" alt="">
-                    <img src="img/logos/compomac.svg" alt="">
-                    <img src="img/logos/galvi.svg" alt="">
-                    <img src="img/logos/accumulators.svg" alt="">
-                    <img src="img/logos/welte.svg" alt="">
-                    <img src="img/logos/jakob.svg" alt="">
+                    <div class="splide" data-splide='{
+                        "type":"loop",
+                        "perPage":4, 
+                        "height": "100px", 
+                        "autoplay": "true",
+                        "breakpoints": 
+                            {
+                                "1024":
+                                    {"height": "85px"},
+                                "835": 
+                                    {"perPage":3,
+                                    "height": "85px"},
+                                "600": 
+                                    {"perPage":2,
+                                    "height": "80px"}
+                            }
+                        }'>
+                        <div class="splide__slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide"><img id="logo-gummi-hmpg" src="img/logos/gummi.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/dodge.svg" alt=""></li>
+                                    <li class="splide__slide"><img id="logo-stm-hmpg" src="img/logos/stm.svg" alt=""></li>
+                                    <li class="splide__slide"><img id="logo-tollok-hmpg" src="img/logos/tollok.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/desch.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/trasmil.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/acriflex.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/compomac.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/galvi.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/accumulators.svg" alt=""></li>
+                                    <li class="splide__slide"><img src="img/logos/welte.svg" alt=""></li>
+                                    <li class="splide__slide"><img id="logo-jakob-hmpg" src="img/logos/jakob.svg" alt=""></li>
+        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="homepage">
             <div class="cont-principal">
                 <h3>Servicios</h3>
+                
             </div>
         </section>
     </main>
@@ -165,5 +235,15 @@
         </div>
     </footer>
 <script src="js/principal.js"></script>
+<script src="js/splide.min.js"></script>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide').mount();
+    } ); 
+    var elms = document.getElementsByClassName( 'splide' );
+    for ( var i = 0, len = elms.length; i < len; i++ ) {
+	new Splide( elms[ i ] ).mount();
+}   
+</script>
 </body>
 </html>
