@@ -179,11 +179,16 @@ nav,.lista-nav{
     justify-content: space-between;
 }
 .cont-banner>img{
-    width: 60%;
+    /*width: 60%;
     margin-left: 10%;
     height: auto;
-    max-width: 630px;
+    max-width: 630px;*/
+    height: 85%;
+    width: auto;
 }
+@media (max-width: 1600px) and (min-width: 836px){.banner-inicio{height:450px}}
+@media (max-width: 1500px) and (min-width: 836px){.banner-inicio{height:400px}}
+@media (max-width: 1400px) and (min-width: 1025px){.banner-inicio{height:350px}}
 .texto-banner{
     width: 30%;
     font-family: "RedHatDisplay", sans-serif;
@@ -208,6 +213,7 @@ nav,.lista-nav{
     display: inline-block;
     font-weight: 400;
     border-radius: 2px;
+    font-size: 15px;
 }
 .bi-enlace a:hover{
     color: #118136;
@@ -271,7 +277,7 @@ nav,.lista-nav{
     display: grid;
     grid: auto / 1fr 1fr 1fr 1fr;
     column-gap: 10%;
-    padding: 40px 0px;
+    padding: 40px 0px 10px 0px;
     margin: 0px 13%;
     text-align: center;
 }
@@ -316,6 +322,17 @@ main{
       height: 2900px;
   }
 
+@media (max-width: 1024px){
+    .texto-banner h2{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .texto-banner p{font-size: 15px;}
+    .bi-enlace a{font-size: 13px;}
+    .banner-inicio .cont-principal{padding: 0}
+}
 @media (max-width: 835px){
     header{
         height: 65px;
@@ -418,6 +435,9 @@ main{
     .hmpg-marcas-cont img{
         filter: none;
     }
+    .cont-banner{position:relative;}
+    .texto-banner{position:absolute; bottom:15px;left:10px;width:calc(100% - 10px)}
+    .cont-banner>img{position:absolute; top:20px;left:0;right:0;height:230px; width:auto; margin:auto}
 }
 @media (max-width: 600px){
     .hmpg-iconos-cont{
@@ -431,6 +451,17 @@ main{
     .hmpg-marcas-cont .splide .splide__slider{margin: 0px 30px;}
     button.splide__arrow--prev{left:0px;}
     button.splide__arrow--next{right:0px;}
+    .texto-banner h2{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .texto-banner p{font-size: 13px;}
+    .bi-enlace a{font-size: 11px;}
+    .banner-inicio .cont-principal{padding: 0}
 }
- 
+@media (max-width: 500px){
+    .cont-banner>img{top:20px;left:0;right:0;height:auto;width:90%;margin:auto}
+}
 .nav-linkedinsvg{fill:#555;} /*#0077b7*/
