@@ -34,7 +34,7 @@
 .splide__arrow--prev svg{transform:scaleX(-1)}
 .splide__arrow--next{right:1em}
 .splide__pagination{position:absolute;z-index:1;bottom:.5em;left:50%;transform:translateX(-50%);padding:0; top: 100%;}
-.splide__pagination__page{display:inline-block;width:7px;height:7px;background:#ccc;border-radius:50%;margin:3px;padding:0;transition:transform .2s linear;border:none;opacity:.8}
+.splide__pagination__page{display:inline-block;width:6px;height:6px;background:#ccc;border-radius:50%;margin:3px 4px;padding:0;transition:transform .2s linear;border:none;opacity:.8}
 .splide__pagination__page.is-active{transform:scale(1.1);background:#222}
 .splide__pagination__page:hover{cursor:pointer;opacity:1}
 .splide__pagination__page:focus{outline:none}

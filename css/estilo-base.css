@@ -435,9 +435,9 @@ main{
     .hmpg-marcas-cont img{
         filter: none;
     }
-    .cont-banner{position:relative;}
-    .texto-banner{position:absolute; bottom:15px;left:10px;width:calc(100% - 10px)}
-    .cont-banner>img{position:absolute; top:20px;left:0;right:0;height:230px; width:auto; margin:auto}
+    .cont-banner{flex-direction: column-reverse;}
+    .texto-banner{width: 100%; text-align: center; margin-bottom: 20px;}
+    .cont-banner>img{height:60%;width:auto;margin:auto;max-height: 240px;}
 }
 @media (max-width: 600px){
     .hmpg-iconos-cont{
@@ -462,6 +462,6 @@ main{
     .banner-inicio .cont-principal{padding: 0}
 }
 @media (max-width: 500px){
-    .cont-banner>img{top:20px;left:0;right:0;height:auto;width:90%;margin:auto}
+    .cont-banner>img{height:auto;width:90%;margin:auto}
 }
 .nav-linkedinsvg{fill:#555;} /*#0077b7*/
