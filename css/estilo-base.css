@@ -457,6 +457,7 @@ main{
         line-height: 25px;
         margin-bottom: 20px;
     }
+    .banner-inicio{height: 490px}
     .texto-banner p{font-size: 13px;}
     .bi-enlace a{font-size: 11px;}
     .banner-inicio .cont-principal{padding: 0}
