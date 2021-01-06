@@ -81,7 +81,6 @@ nav,.lista-nav{
     transition: all 0.3s ease-in-out;
     visibility: hidden;
 }
-/*.lista-nav>li:hover .cont-sublista,*/
 .lista-nav>li .cont-sublista.sublista-activado{
     opacity: 1;
     visibility: visible;
@@ -179,10 +178,6 @@ nav,.lista-nav{
     justify-content: space-between;
 }
 .cont-banner>img{
-    /*width: 60%;
-    margin-left: 10%;
-    height: auto;
-    max-width: 630px;*/
     height: 85%;
     width: auto;
 }
@@ -192,6 +187,19 @@ nav,.lista-nav{
 .texto-banner{
     width: 30%;
     font-family: "RedHatDisplay", sans-serif;
+}
+.banner-medio{
+    background-image: url("../img/banner/gears4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.texto-banner-medio{
+    width: 42%;
+    font-family: "RedHatDisplay", sans-serif;
+}
+.texto-banner-medio p{
+    margin-bottom: 20px;
 }
 .texto-banner h2{
     font-size: 32px;
@@ -243,7 +251,7 @@ nav,.lista-nav{
     height: 100%;
     text-align: center;
     padding: 0px 20px 20px 20px;
-    background-color: #eeeeee;
+    background-color: #eee;
     border-radius: 5px;
 }
 .hmpg-prod-dest img{    
@@ -299,7 +307,6 @@ nav,.lista-nav{
     margin: auto;
 }
 .hmpg-marcas-cont img{
-    filter: grayscale(100%) brightness(90%) contrast(150%);
     height: 40%;
     width: 100%;
 }
@@ -314,9 +321,6 @@ nav,.lista-nav{
 }
 #logo-jakob-hmpg{
     height: 30%;
-}
-.hmpg-marcas-cont img:hover{
-    filter: grayscale(0%);
 }
 main{
       height: 2900px;
@@ -339,6 +343,16 @@ main{
     }
     .banner-inicio{
         margin-top: 65px;
+    }
+    .banner-medio{
+        background-image: url("../img/banner/gears7.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 400px;
+    }
+    .homepage h3{
+        font-size: 24px;
     }
     nav{
         display: block;
@@ -386,8 +400,6 @@ main{
         border-left: 1px solid #eee;
         display: inline-flex;
         float: right;
-        /*position: absolute;
-        right: 0;*/
     }
     .flecha-sublista{
         height: 11px;
@@ -427,16 +439,16 @@ main{
         column-gap: 8%;
         margin: 0px 4%;
     }
+    .hmpg-icono{font-size: 15px;}
     .hmpg-prod-cont{
         grid: 1fr 1fr 1fr/100%;
         column-gap: 0%;
         row-gap: 35px;
     }
-    .hmpg-marcas-cont img{
-        filter: none;
-    }
+    .banner-medio .cont-banner{justify-content: center;}
     .cont-banner{flex-direction: column-reverse;}
     .texto-banner{width: 100%; text-align: center; margin-bottom: 20px;}
+    .texto-banner-medio{margin-bottom: 0px;}
     .cont-banner>img{height:60%;width:auto;margin:auto;max-height: 240px;}
 }
 @media (max-width: 600px){
@@ -444,10 +456,10 @@ main{
         width: 275px;
         grid: auto auto/ 110px 110px;
         gap: 55px;
-        padding: 30px 0px;
         margin: auto;
         text-align: center;
     }
+    .hmpg-prod-cont{gap: 20px;}
     .hmpg-marcas-cont .splide .splide__slider{margin: 0px 30px;}
     button.splide__arrow--prev{left:0px;}
     button.splide__arrow--next{right:0px;}
@@ -457,10 +469,13 @@ main{
         line-height: 25px;
         margin-bottom: 20px;
     }
-    .banner-inicio{height: 490px}
+    .banner-inicio{height: 492px}
     .texto-banner p{font-size: 13px;}
     .bi-enlace a{font-size: 11px;}
     .banner-inicio .cont-principal{padding: 0}
+    .banner-medio{height: 390px}
+    .banner-medio .texto-banner p{font-size: 14px;}
+    .homepage h3{font-size: 23px;}
 }
 @media (max-width: 500px){
     .cont-banner>img{height:auto;width:90%;margin:auto}
