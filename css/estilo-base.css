@@ -183,33 +183,32 @@ nav,.lista-nav{
 }
 @media (max-width: 1600px) and (min-width: 836px){.banner-inicio{height:450px}}
 @media (max-width: 1500px) and (min-width: 836px){.banner-inicio{height:400px}}
-@media (max-width: 1400px) and (min-width: 1025px){.banner-inicio{height:350px}}
+@media (max-width: 1400px) and (min-width: 1025px){.banner-inicio{height:380px}}
+@media (max-width: 1400px) and (min-width: 836px){.cont-banner>img{height: 80%;}}
 .texto-banner{
-    width: 30%;
+    width: 40%;
     font-family: "RedHatDisplay", sans-serif;
 }
 .banner-medio{
-    background-image: url("../img/banner/gears4.png");
+    background-image: url("../img/banner/gears4-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    margin-top: 40px;
 }
 .texto-banner-medio{
     width: 42%;
     font-family: "RedHatDisplay", sans-serif;
 }
-.texto-banner-medio p{
-    margin-bottom: 20px;
-}
+.texto-banner-medio p{margin-bottom: 20px}
+.texto-banner-medio b{color: #118136}
 .texto-banner h2{
     font-size: 32px;
     font-weight: 700;
     line-height: 35px;
     margin-bottom: 20px;
 }
-.texto-banner p{
-    font-size: 17px;
-}
+.texto-banner p{font-size: 17px}
 .bi-enlace{
     margin-top: 30px;
 }
@@ -234,6 +233,7 @@ nav,.lista-nav{
 }
 .homepage2{
     background-color: #eee;
+    margin-bottom: 20px;
 }
 .homepage h3{
     text-align: center;
@@ -310,23 +310,29 @@ nav,.lista-nav{
     height: 40%;
     width: 100%;
 }
-#logo-gummi-hmpg{
-    height: 55%;
+#logo-gummi-hmpg{height: 55%}
+#logo-stm-hmpg{height: 60%}
+#logo-tollok-hmpg{height: 30%}
+#logo-jakob-hmpg{height: 30%}
+footer{
+    background-color: #ddd;
+    font-family: "RedHatDisplay", sans-serif;
+    color: #505050;
+    font-size: 15px;
 }
-#logo-stm-hmpg{
-    height: 60%;
+.hmpg-footer{
+    padding: 30px 0px;
 }
-#logo-tollok-hmpg{
-    height: 30%;
+.footer-columna{
+    height: 150px;
 }
-#logo-jakob-hmpg{
-    height: 30%;
+.footer-copyright{
+    padding: 17px 0px;
+    border-top: solid 1px #c5c5c5;
+    font-size: 13px;
 }
-main{
-      height: 2900px;
-  }
-
 @media (max-width: 1024px){
+    .texto-banner{width: 30%}
     .texto-banner h2{
         font-size: 28px;
         font-weight: 700;
@@ -334,26 +340,22 @@ main{
         margin-bottom: 20px;
     }
     .texto-banner p{font-size: 15px;}
+    .texto-banner-medio{width: 42%}
     .bi-enlace a{font-size: 13px;}
     .banner-inicio .cont-principal{padding: 0}
 }
 @media (max-width: 835px){
-    header{
-        height: 65px;
-    }
-    .banner-inicio{
-        margin-top: 65px;
-    }
+    header{height: 65px}
+    .banner-inicio{margin-top: 65px}
     .banner-medio{
         background-image: url("../img/banner/gears7.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         height: 400px;
+        margin-top: 20px;
     }
-    .homepage h3{
-        font-size: 24px;
-    }
+    .homepage h3{font-size: 24px}
     nav{
         display: block;
         position: absolute;
@@ -376,9 +378,7 @@ main{
         overflow-y: auto;
         padding-bottom: 80px;
     }
-    nav.nav-activado{
-        right: 0%;
-    }
+    nav.nav-activado{right: 0%}
     .lista-nav>li{
         display: block;
         height: unset;
@@ -424,17 +424,13 @@ main{
         column-gap: 40px;
         padding: 18px 5% 0px;
     }
-    .sublista-nav li{
-        padding: 13px 0px;
-    }
+    .sublista-nav li{padding: 13px 0px;}
     .sublista-nav li a{
         line-height: 17px;
         font-size: 14px;
         font-weight: 400;
     }    
-    .overlay-sublista.mostrar{
-        display: none;
-    }
+    .overlay-sublista.mostrar{display: none}
     .hmpg-iconos-cont{
         column-gap: 8%;
         margin: 0px 4%;
